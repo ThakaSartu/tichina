@@ -1,33 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Emoji:wght@300;500&family=Quicksand:wght@300;500;600;700&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@900&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
-$header: $conifer !default;
-$blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
+$body-background: $cod-grey  !default;
+$body-foreground: $gallery  !default;
+$header: $conifer  !default;
+$blockquote-color: $silver-chalice  !default;
+$blockquote-border: $dove-grey  !default;
 $container-max-width: 1000px;
 
 @mixin media-max-width($max-width) {
   @media (max-width: $max-width) {
-      @content;
+    @content;
   }
 }
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../images/bkg.png") 0 0;
-  color: $body-foreground;
+  color: wheat;
+  background-color: #010a00;
+  background-image: url("https://64.media.tumblr.com/c7bf6a6f96287cb3e0f69cd52127bf27/0a962b359df0bb52-79/s1280x1920/bed66e8e5f93f738cd77aeb15dc9d51f2359298e.gifv");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "Comfortaa", -apple-system, Ubuntu, "Ariel Black", Verdana;
 }
 
-/* General & 'Reset' Stuff */
+
+
+/* General & 'Reset' Stuff
+https://raw.githubusercontent.com/ThakaSartu/coral/master/assets/images/video/130127546_1802806479881001_6887400137255669117_n.jpg */
 
 .container {
-  width: 90%;
+  width: 70%;
   max-width: $container-max-width;
   margin: 0 auto;
 }
@@ -37,12 +183,17 @@ section {
   margin: 0 0 20px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 20px;
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 1.4;
 }
 
 /* Header, <header>
@@ -59,12 +210,13 @@ header {
   margin: 0 0 40px 0;
 }
 
+/*
 header h1 {
   font-size: 30px;
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: 'Rubik Burned', cursive;
   color: $conifer;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -78,14 +230,48 @@ header h1 {
 
 
 header h1:before {
-  content: "./ ";
-  font-size: 24px;
+
+  font-size: 50px;
+}
+*/
+header h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin: 0 0 0 -40px;
+  font-family: 'Fredoka One', 'Anybody', -apple-system, Ubuntu, "Ariel Black", Verdana;
+  color: $conifer; //$header;
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);  */
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0DCBFF,
+    0 0 82px #0DCBFF,
+    0 0 92px #0DCBFF,
+    0 0 102px #0DCBFF,
+    0 0 125px #0DCBFF;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  @include media-max-width($container-max-width) {
+    margin-left: 0;
+  }
+
+}
+
+
+header h1:before {
+  /* content: "./BUBBLEGUMPOP"; */
+  font-size: 4rem;
 }
 
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: #fff;
 }
 
 #downloads .btn {
@@ -101,18 +287,24 @@ header h2 {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
 section img {
   max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $header;
+  padding: 10px 10px 10px 15px;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+    0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 #main_content h1 {
@@ -150,7 +342,7 @@ dt {
 }
 
 ul li {
-  list-style-image:url('../images/bullet.png');
+  list-style-image: url('../images/bullet.png');
 }
 
 blockquote {
@@ -160,11 +352,12 @@ blockquote {
 }
 
 pre {
+  color: #fff;
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: #b5e853;
+
   border-radius: 2px;
   word-wrap: normal;
   overflow: auto;
@@ -172,7 +365,7 @@ pre {
 }
 
 code.highlighter-rouge {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
@@ -183,6 +376,8 @@ code.highlighter-rouge {
 table {
   width: 100%;
   margin: 0 0 20px 0;
+  background: rgb(242,100,48);
+  background: linear-gradient(41deg, rgba(242,100,48,1) 0%, rgba(55,242,48,0.5) 0%, rgba(242,229,48,0.7) 100%);
 }
 
 th {
@@ -209,12 +404,11 @@ hr {
   display: inline-block;
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
-  border-radius: 50px;
+  border-radius: 0px;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.8);
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 13px;
   text-decoration: none;
@@ -223,7 +417,7 @@ hr {
 }
 
 .btn:hover {
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.8), rgba(35, 35, 35, 0.8) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
 }
 
 .btn .icon {
@@ -239,9 +433,12 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-/* Links
-   a, a:hover, a:visited
-*/
+
+a,
+a:hover,
+a:visited a:hover {
+  color: #c9ff23;
+}
 
 a {
   color: #63c0f5;
@@ -250,19 +447,842 @@ a {
 
 /* Clearfix */
 
-.cf:before, .cf:after {
-  content:"";
-  display:table;
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
 }
 
 .cf:after {
-  clear:both;
+  clear: both;
 }
 
 .cf {
-  zoom:1;
+  zoom: 1;
 }
 
 #a-title {
   text-decoration: none;
+}
+
+
+
+
+iframe {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("https://raw.githubusercontent.com/ThakaRashard/bubblegumpop/gh-pages/img/bd_type1_car.jpg");
+  border: none;
+}
+
+p {
+  color: white;
+  background: rgb(48,78,242);
+background: linear-gradient(27deg, rgba(48,78,242,0.8) 0%, rgba(242,100,48,0.8) 50%, rgba(242,229,48,0.8) 100%);
+ /*  background: rgb(55,242,48);
+background: linear-gradient(41deg, rgba(55,242,48,0.9) 0%, rgba(242,229,48,0.8) 100%); /* background: rgb(172, 65, 66); */
+  /* background: linear-gradient(90deg, rgba(172, 65, 66, 0.7399334733893557) 0%, rgba(170, 117, 159, 0.8127626050420168) 35%, rgba(0, 212, 255, 0.7091211484593838) 100%); */
+  /* background-image: url("https://raw.githubusercontent.com/ThakaRashard/bubblegumpop/gh-pages/img/halfscreen-black.gif"); */
+}
+
+img {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+h2,
+h1,
+h3 {
+  color: white;
+ /* background: transparent url(https://raw.githubusercontent.com/ThakaRashard/bubblegumpop/gh-pages/img/halfscreen-gray.gif) center repeat; */
+  font-weight: 900;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(278deg, rgba(0, 0, 0, 0.7768595041322314) 0%, rgba(72, 83, 89, 0.8292011019283747) 35%, rgba(176, 185, 191, 0.7768595041322314) 100%);
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  font-variant-caps: small-caps;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+h2 {
+  font-weight: 900;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+
+}
+
+.firstcharacter {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 7px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+
+}
+
+
+.some-page-wrapper {
+  margin: 15px;
+  background-color: #23b2ff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  overflow: hidden;
+}
+
+.blue-column {
+  background-color: #23ff32;
+
+}
+
+.green-column {
+
+  background-color: #c9ff23;
+}
+
+/* ------------------------------------------- */
+
+
+.twoPanelSpread {
+  margin: 0px;
+  padding: 0px;
+  background: url(https://i.giphy.com/media/ddZXIrimeaXY0xclfC/giphy.webp ) center repeat;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.panelColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftColumn {
+  background-color: #2470ff;
+  width: 100%;
+}
+
+.leftColumn img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rightColumn {
+  background-color: #c9ff23;
+}
+
+.rightColumn img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.divAlbumReview {
+  background-image: url("https://m.media-amazon.com/images/I/41QKR5BJVZL.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  clear: both;
+  margin: 0px;
+  border-bottom: 0px dashed #c9ff23;
+  font-size: 20px;
+  color: white;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+    monospace;
+}
+
+.pdivAlbumReview {
+  background: rgba(255, 108, 35, 0.5);
+}
+
+.broken-width {
+  width: 100%;
+}
+
+.right-width {
+  min-width: 100%;
+}
+
+audio {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -moz-box-shadow: 2px 2px 4px 0px #006773;
+  -webkit-box-shadow: 2px 2px 4px 0px #006773;
+  box-shadow: 2px 2px 4px 0px #006773;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#row_image {
+  border: 5px solid #ccc;
+  background: #666;
+  max-width: 100%;
+  padding: 50px;
+  background-image: url("https://www.whosampled.com/static/track_images_100/mr11753_2010108_73251697983.jpg");
+  background-repeat: repeat;
+}
+
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #FFF300,
+    inset -20px 0 80px #0AFF00,
+    inset 20px 0 300px #FFF300,
+    inset -20px 0 300px #0AFF00,
+    0 0 50px #fff,
+    -10px 0 80px #FFF300,
+    10px 0 80px #0AFF00;
+
+}
+
+.image {
+  width: 100px;
+  flex: 1 0 auto;
+}
+
+.featured-image {
+  flex: 0 0 100%;
+}
+
+/* GiTHUB_LOGO##TEAM_SPiRiT!!! */
+
+/* IMAN_FRUM_SOMALiA_MY_MOMMA */
+.pinupGallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  object-fit: contain;
+}
+
+.pinupImage {
+  width: 100px;
+  flex: 1 0 auto;
+}
+
+.featured-pinupImage {
+  flex: 0 0 100%;
+}
+
+
+/* GHOST_CAPTiONED_PHOTO */ 
+/* General presentation stuff */
+.post-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* img {	max-width: 100%; }  ###MAY_BE_BREAKING_SOME_SOME_IMAGES */
+.post-content>img   {	
+  max-width: 100%;
+ } 
+/* Set content grid so it respects order values */
+.post-content {
+  display: grid;
+}
+
+/*
+Style image if there is an image right after the heading
+Use order to put it above the heading
+Relative position for absolute caption
+*/
+.post-content h1+.kg-image-card {
+  margin: 0 -24px;
+  order: -1;
+  position: relative;
+}
+
+
+/* Style image's caption if there is an image right after the heading */
+.post-content h1+.kg-image-card figcaption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1rem 1.2rem;
+  opacity: 0.5;
+  background: linear-gradient(90deg, rgba(172, 65, 66, 0.7399334733893557) 0%, rgba(170, 117, 159, 0.8127626050420168) 35%, rgba(0, 212, 255, 0.7091211484593838) 100%);
+}
+
+
+/* FLEX_BOX_FOR_3_IMAGES */
+.flex-container {
+
+  display: flex;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  max-height: 100%;
+  width:100%;
+  padding: 0px;
+  gap: 0px;
+  margin:0px;
+
+ background: rgb(255,224,0);
+background: radial-gradient(circle, rgba(255,224,0,0.3379726890756303) 35%, rgba(0,212,255,1) 100%);
+}
+
+.flex-container>div {
+
+  border: 1px solid #c9ff23;
+  border-radius: 0px;
+
+  margin:auto;
+  padding: auto;
+}
+
+
+
+
+
+/* LAYOUTS */
+/* ##6panel4collages use equallateral images */
+.sixpanel {
+  align-items: stretch;
+  /* flex-flow: row nowrap; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  line-height: 0;
+  justify-content: center;
+  align-content: stretch;
+  height: 100%;
+  /* min-width: fit-content; */
+  /* max-width: max-content; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  object-fit: contain;
+}
+
+.sixpanel>div {
+  border: 1px solid #b4e853;
+}
+
+.sixpanel>img {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  border: 0px solid #b4e853;
+}
+
+/* GiTHUB_LOGO##TEAM_SPiRiT!!! */
+/* 4-6images
+	/* IMAN_FRUM_SOMALiA_MY_MOMMA */
+.pinupGallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  object-fit: contain;
+}
+
+.pinupImage {
+  width: 100px;
+  flex: 1 0 auto;
+}
+
+.featured-pinupImage {
+  flex: 0 0 100%;
+}
+
+
+/* ##TWO_PANEL_LAYOUT_ADDED_7_28_2022_FOR_SPLiT_SCREEN_POSTS */
+/* ##TWO_PANEL_LAYOUT_ADDED_7_28_2022_FOR_SPLiT_SCREEN_POSTS */
+
+.twoPanelSpread {
+  margin: 0px;
+  padding: 0px;
+  background: url(https://raw.githubusercontent.com/ThakaRashard/bubblegumpop/gh-pages/img/810MATRiX.webp ) center repeat;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.panelColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftColumn {
+  background-color: #2470ff;
+  width: 100%;
+}
+
+.leftColumn img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rightColumn {
+  background-color: #c9ff23;
+}
+
+.rightColumn img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.twoPanelSpread>img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+/* 3PANEL_SPREAD_WORKS_WELL_WITH_SQUARE_AND_VERTiCAL_iMAGES */
+
+.flex3BorderedPaddedROW {
+
+  display: flex;
+  align-items: stretch;
+  /* flex-flow: row nowrap; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+
+.flex3BorderedPaddedROW>div {
+
+  border: 1px solid #c9ff23;
+  border-radius: 1px;
+  padding: 8px;
+}
+
+
+.flex3BorderedPaddedROW>img {
+
+  border: 3px dotted #c9ff23;
+  border-radius: 1px;
+  padding: 8px;
+}
+
+/* FLEX_BOX_FOR_3_IMAGES 
+.flex-container {
+
+  display: flex;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+}
+
+.flex-container>div {
+
+  border: 1px solid #c9ff23;
+  border-radius: 1px;
+  padding: 8px;
+} */
+
+/*  4PANEL_SPREAD_CREATED_FOR_SARTUS_MODELiNG_ENERGY, many uses tho to feature things ##ASK_DiDO */
+.panel4-container {
+
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+  padding: 0px;
+  gap: 5px;
+
+}
+
+/* EXPANDiNG_GALLERY5_##HTMLPUG_PORT_OF */
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+	--magnifier: 6;
+	--gap: 1vmin;
+	--transition: 0.5s;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.grid {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.thegrid {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer thegrid flex items */
+	margin: -1rem -1rem;
+}
+
+.thegrid-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.thegrid-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.thegrid-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.thegrid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.thegrid,
+	.thegrid-item {
+		margin: 0;
+	}
+}
+
+
+
+
+.expandingGallery {
+  width: 100%;
+  height: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  background: rgb(48,78,242);
+  background: linear-gradient(201deg, rgba(48,78,242,1) 0%, rgba(242,100,48,1) 50%, rgba(242,229,48,1) 100%);}
+
+.expandingGallery>img {
+  --brightness: 0.75;
+  --grayscale: 1;
+  transition: flex var(--transition), filter var(--transition);
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  flex: 1;
+}
+
+.expandingGallery>img:hover {
+
+  flex: var(--magnifier);
+}
+
+
+/* STYLED_DiVS_ROTATiONS_OVERLAYS_ETC */
+div.a {
+    max-width:100%;
+    max-height:auto;
+    background-color: rgb(255, 0, 157);
+    -ms-transform: rotate(215deg); /* IE 9 */
+    transform: rotate(215deg);
+    flex: 1; 
+  }
+  
+  
+
+
+/* ROLLOVER */ 
+.rollovercontainer {
+  margin: auto;
+  width: 500px;
+}
+
+
+
+/* image effect */
+.rollover {
+  position: relative;
+  display: inline-block;
+}
+.rollover img {
+  transition: opacity 1.5s ease-in-out;
+  backface-visibility: hidden;
+}
+.rollover .first {
+  top: 0;
+  left: 0;
+}
+.rollover .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.rollover:hover .first {
+  opacity: 0;
+}
+.rollover:hover .second {
+  opacity: 1;
+}
+
+
+/* SELASSiE_HOUSE_VIDEO_PLAYER */ 
+#instructions {
+  max-width: 100%;
+  text-align: left;
+  margin: 30px auto;
+}
+#instructions textarea {
+  width: 70%;
+  height: 100px;
+}
+
+/* Show the controls (hidden at the start by default) */
+.video-js .vjs-control-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*
+  Player Skin Designer for Video.js
+  http://videojs.com
+
+  To customize the player skin edit 
+  the CSS below. Click "details" 
+  below to add comments or questions.
+  This file uses some SCSS. Learn more  
+  at http://sass-lang.com/guide)
+
+  This designer can be linked to at:
+  https://codepen.io/heff/pen/EarCt/left/?editors=010
+*/
+
+/* The following are SCSS variables to automate some of the values.
+ But don't feel limited by them. Change/replace whatever you want.
+
+ The color of icons, text, and the big play button border.
+ Try changing to #0f0 */
+$primary-foreground-color: #ff8;
+
+/* The default color of control backgrounds is mostly black but with a little
+// bit of blue so it can still be seen on all-black video frames, which are common.
+// Try changing to #900 */
+$primary-background-color: #2b333f;
+
+/* Try changing to true */
+$center-big-play-button: true;
+
+.video-js {
+  /* The base font size controls the size of everything, not just text.
+     All dimensions use em-based sizes so that the scale along with the font size.
+     Try increasing it to 15px and see what happens. */
+  font-size: 10px;
+
+  /* The main font color changes the ICON COLORS as well as the text */
+  color: $primary-foreground-color;
+}
+
+/* The "Big Play Button" is the play button that shows before the video plays.
+   To center it set the align values to center and middle. The typical location
+   of the button is the center, but there is trend towards moving it to a corner
+   where it gets out of the way of valuable content in the poster image.*/
+.vjs-default-skin .vjs-big-play-button {
+  /* The font size is what makes the big play button...big. 
+     All width/height values use ems, which are a multiple of the font size.
+     If the .video-js font-size is 10px, then 3em equals 30px.*/
+  font-size: 3em;
+
+  /* We're using SCSS vars here because the values are used in multiple places.
+     Now that font size is set, the following em values will be a multiple of the
+     new font size. If the font-size is 3em (30px), then setting any of
+     the following values to 3em would equal 30px. 3 * font-size. */
+  $big-play-width: 3em;
+  /* 1.5em = 45px default */
+  $big-play-height: 1.5em;
+
+  line-height: $big-play-height;
+  height: $big-play-height;
+  width: $big-play-width;
+
+  /* 0.06666em = 2px default */
+  border: 0.06666em dotted $primary-foreground-color;
+  /* 0.3em = 9px default */
+  border-radius: 0.3em;
+
+  @if $center-big-play-button {
+    /* Align center */
+    left: 50%;
+    top: 50%;
+    margin-left: -($big-play-width / 2);
+    margin-top: -($big-play-height / 2);
+  } @else {
+    /* Align top left. 0.5em = 15px default */
+    left: 0.5em;
+    top: 0.5em;
+  }
+}
+
+/* The default color of control backgrounds is mostly black but with a little
+   bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  /* IE8 - has no alpha support */
+  background-color: $primary-background-color;
+  /* Opacity: 1.0 = 100%, 0.0 = 0% */
+  background-color: rgba($primary-background-color, 0.7);
+}
+
+/* Make a slightly lighter version of the main background
+// for the slider background. */
+$slider-bg-color: lighten($primary-background-color, 33%);
+
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+  background-color: $slider-bg-color;
+  background-color: rgba($slider-bg-color, 1.5);
+}
+
+/* The slider bar color is used for the progress bar and the volume bar
+   (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: $primary-foreground-color;
+}
+
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+  /* For IE8 we'll lighten the color */
+  background: lighten($slider-bg-color, 25%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.5);
+}
+
+/* The load progress bar also has internal divs that represent
+   smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+  /* For IE8 we'll lighten the color */
+  background: lighten($slider-bg-color, 50%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.75);
 }
